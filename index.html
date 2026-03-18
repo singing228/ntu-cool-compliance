@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTU COOL — 使用者協議合規流程</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════
+     PAGE 1: AGREEMENT SIGNING (Compliance Gate)
+     ═══════════════════════════════════════════ -->
+    <div id="page-sign" class="page active">
+        <nav class="topbar">
+            <div class="topbar-logo">
+                <div class="logo-icon">🎓</div>
+                <span class="logo-text">NTU COOL</span>
+            </div>
+            <div class="topbar-actions">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" onclick="setLang('zh')">繁體中文</button>
+                    <span>/</span>
+                    <button class="lang-btn" onclick="setLang('en')">English</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sign-container">
+            <div class="step-indicator">
+                <div class="step-dot active"></div>
+                <div class="step-line"></div>
+                <div class="step-dot"></div>
+                <span class="step-label" data-zh="步驟 1／1：閱讀並簽署協議" data-en="Step 1/1: Read & Sign Agreement">步驟
+                    1／1：閱讀並簽署協議</span>
+            </div>
+
+            <div class="sign-card">
+                <div class="sign-card-header">
+                    <div>
+                        <h1 class="sign-title" data-zh="使用者協議" data-en="User Agreement">使用者協議</h1>
+                        <p class="sign-subtitle" data-zh="請仔細閱讀以下條款後簽署，方可使用本平台。"
+                            data-en="Please read the following terms carefully before signing to use this platform.">
+                            請仔細閱讀以下條款後簽署，方可使用本平台。</p>
+                    </div>
+                    <div class="version-badge">v2.2 · 2026-03-15</div>
+                </div>
+
+                <!-- Section 1: Basic Terms -->
+                <div class="terms-section mandatory">
+                    <div class="section-tag mandatory-tag" data-zh="必填" data-en="Required">必填</div>
+                    <h2 class="section-title" data-zh="一、基礎使用條款" data-en="I. Basic Terms of Use">一、基礎使用條款</h2>
+                    <div class="scroll-area" id="terms-scroll">
+                        <div class="terms-text">
+                            <p data-zh="本平台（NTU COOL）由台灣大學計算機及資訊網路中心管理維護。使用者須遵守下列各項規定："
+                                data-en="This platform (NTU COOL) is managed by the NTU Computer and Information Networking Center. Users must comply with the following regulations:">
+                                本平台（NTU COOL）由台灣大學計算機及資訊網路中心管理維護。使用者須遵守下列各項規定：</p>
+                            <p><strong data-zh="1. 帳號責任" data-en="1. Account Responsibility">1. 帳號責任</strong></p>
+                            <p data-zh="使用者對其帳號及密碼負完全責任，不得將帳號轉讓或出借他人使用。任何透過您帳號發生的行為，均視為您本人所為。"
+                                data-en="Users are fully responsible for their accounts and passwords and shall not transfer or lend them. Any actions through your account are considered your own.">
+                                使用者對其帳號及密碼負完全責任，不得將帳號轉讓或出借他人使用。任何透過您帳號發生的行為，均視為您本人所為。</p>
+                            <p><strong data-zh="2. 智慧財產權" data-en="2. Intellectual Property">2. 智慧財產權</strong></p>
+                            <p data-zh="平台上所有教材、影片及相關資源之著作權均歸原始著作人所有。未經授權，不得複製、散佈或重製任何內容。"
+                                data-en="All course materials, videos, and resources on the platform are owned by their original authors. Reproduction or distribution without authorization is prohibited.">
+                                平台上所有教材、影片及相關資源之著作權均歸原始著作人所有。未經授權，不得複製、散佈或重製任何內容。</p>
+                            <p><strong data-zh="3. 隱私保護" data-en="3. Privacy Protection">3. 隱私保護</strong></p>
+                            <p data-zh="本平台蒐集之個人資料依據《個人資料保護法》處理，詳情請參閱隱私權政策。您的學習記錄、成績及互動資料將依法保護。"
+                                data-en="Personal data collected by this platform is processed in accordance with the Personal Data Protection Act. Your learning records, grades, and interaction data are legally protected.">
+                                本平台蒐集之個人資料依據《個人資料保護法》處理，詳情請參閱隱私權政策。您的學習記錄、成績及互動資料將依法保護。</p>
+                            <p><strong data-zh="4. 使用規範" data-en="4. Usage Regulations">4. 使用規範</strong></p>
+                            <p data-zh="禁止任何形式的學術不誠信行為。禁止在平台上散布惡意程式或進行任何網路攻擊。違反規定者，本校保留停權之權利。"
+                                data-en="Any form of academic dishonesty is prohibited. Spreading malware or conducting cyber attacks on the platform is prohibited. Violators may have their accounts suspended.">
+                                禁止任何形式的學術不誠信行為。禁止在平台上散布惡意程式或進行任何網路攻擊。違反規定者，本校保留停權之權利。</p>
+                            <p><strong data-zh="5. 服務變更" data-en="5. Service Changes">5. 服務變更</strong></p>
+                            <p data-zh="本校保留修訂本條款之權利。條款更新後，使用者須重新確認方可繼續使用。重大變更將以電子郵件通知。"
+                                data-en="The university reserves the right to revise these terms. After updates, users must re-confirm to continue using the platform. Major changes will be notified by email.">
+                                本校保留修訂本條款之權利。條款更新後，使用者須重新確認方可繼續使用。重大變更將以電子郵件通知。</p>
+                        </div>
+                    </div>
+                    <label class="checkbox-label mandatory-check" id="basic-label">
+                        <input type="checkbox" id="basic-checkbox" onchange="updateSignBtn()">
+                        <span class="checkbox-custom"></span>
+                        <span class="check-text" data-zh="我已閱讀並同意以上基礎條款"
+                            data-en="I have read and agree to the Basic Terms of Use">我已閱讀並同意以上基礎條款</span>
+                        <span class="required-star">*</span>
+                    </label>
+                </div>
+
+                <!-- Section 2: AI Opt-out -->
+                <div class="terms-section ai-section">
+                    <div class="ai-section-header">
+                        <div>
+                            <div class="section-tag optional-tag" data-zh="可選" data-en="Optional">可選</div>
+                            <h2 class="section-title" data-zh="二、AI 資料訓練授權"
+                                data-en="II. AI Data Training Authorization">二、AI 資料訓練授權</h2>
+                        </div>
+                        <div class="info-tooltip-wrap">
+                            <button class="info-btn" onclick="toggleTooltip()" aria-label="說明">ℹ️</button>
+                            <div class="tooltip-box" id="ai-tooltip">
+                                <p data-zh="您的學習資料（如閱讀行為、作答記錄）可能用於改善 AI 教學推薦功能。您可以隨時在個人設定中變更此選項。"
+                                    data-en="Your learning data (reading behavior, quiz records) may be used to improve AI teaching recommendations. You can change this in personal settings at any time.">
+                                    您的學習資料（如閱讀行為、作答記錄）可能用於改善 AI 教學推薦功能。您可以隨時在個人設定中變更此選項。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ai-desc" data-zh="本平台希望使用您的學習互動資料（匿名化處理）以訓練 AI 模型，進而提供更個人化的學習建議。此授權為可選項目，不影響您使用本平台的基本功能。"
+                        data-en="This platform wishes to use your learning interaction data (anonymized) to train AI models for personalized learning recommendations. This consent is optional and does not affect your basic access.">
+                        本平台希望使用您的學習互動資料（匿名化處理）以訓練 AI 模型，進而提供更個人化的學習建議。此授權為可選項目，不影響您使用本平台的基本功能。</p>
+                    <div class="radio-group">
+                        <label class="radio-label" id="ai-agree-label">
+                            <input type="radio" name="ai-consent" value="agree" checked onchange="updateSignBtn()">
+                            <span class="radio-custom"></span>
+                            <div class="radio-content">
+                                <span class="radio-title agree-title" data-zh="✅ 同意授權" data-en="✅ I Consent">✅
+                                    同意授權</span>
+                                <span class="radio-desc" data-zh="允許將我的學習資料（匿名化）用於 AI 模型訓練，以獲得個人化推薦。"
+                                    data-en="Allow my learning data (anonymized) to be used for AI model training to receive personalized recommendations.">允許將我的學習資料（匿名化）用於
+                                    AI 模型訓練，以獲得個人化推薦。</span>
+                            </div>
+                        </label>
+                        <label class="radio-label optout-label" id="ai-optout-label">
+                            <input type="radio" name="ai-consent" value="optout" onchange="updateSignBtn()">
+                            <span class="radio-custom"></span>
+                            <div class="radio-content">
+                                <span class="radio-title optout-title" data-zh="🚫 選擇退出 (Opt-out)"
+                                    data-en="🚫 Opt-out">🚫 選擇退出 (Opt-out)</span>
+                                <span class="radio-desc" data-zh="我的資料將不會用於 AI 訓練。仍可正常使用平台所有功能。"
+                                    data-en="My data will not be used for AI training. You can still use all platform features normally.">我的資料將不會用於
+                                    AI 訓練。仍可正常使用平台所有功能。</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="sign-footer">
+                    <p class="footer-note" data-zh="簽署後，您的選擇將被記錄並可於「個人設定 → 隱私與授權」中隨時查看或修改 AI 授權狀態。"
+                        data-en="After signing, your choices are recorded and can be viewed or modified under 'Personal Settings → Privacy & Authorization' at any time.">
+                        簽署後，您的選擇將被記錄並可於「個人設定 → 隱私與授權」中隨時查看或修改 AI 授權狀態。</p>
+                    <button class="sign-btn" id="sign-btn" onclick="doSign()" disabled>
+                        <span data-zh="繼續進入系統" data-en="Continue to Platform">繼續進入系統</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════
+     PAGE 2: DASHBOARD
+     ═══════════════════════════ -->
+    <div id="page-dashboard" class="page">
+        <div class="app-layout">
+            <div class="sidebar">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text">NTU COOL</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a class="nav-item active" href="#"><span class="nav-icon">📚</span><span data-zh="我的課程"
+                            data-en="My Courses">我的課程</span></a>
+                    <a class="nav-item" href="#" onclick="goPage('page-settings');return false;"><span
+                            class="nav-icon">⚙️</span><span data-zh="個人設定" data-en="Settings">個人設定</span></a>
+                    <a class="nav-item" href="#" onclick="goPage('page-admin');return false;"><span
+                            class="nav-icon">🛡️</span><span data-zh="管理員 (模擬)" data-en="Admin (Demo)">管理員
+                            (模擬)</span></a>
+                </nav>
+                <div class="sidebar-user">
+                    <div class="user-avatar">陳</div>
+                    <div class="user-info">
+                        <div class="user-name">陳小明</div>
+                        <div class="user-role" data-zh="學生" data-en="Student">學生</div>
+                    </div>
+                </div>
+            </div>
+
+            <main class="main-content">
+                <div class="success-banner" id="success-banner">
+                    <span class="success-icon">✅</span>
+                    <span id="banner-text" data-zh="協議簽署完成！歡迎回來，陳小明。"
+                        data-en="Agreement signed! Welcome back, Chen Xiao-ming.">協議簽署完成！歡迎回來，陳小明。</span>
+                    <button onclick="this.parentElement.style.display='none'">✕</button>
+                </div>
+
+                <div class="page-header">
+                    <h1 data-zh="我的課程" data-en="My Courses">我的課程</h1>
+                    <div class="lang-toggle-small">
+                        <button class="lang-btn" onclick="setLang('zh')">中</button>
+                        <button class="lang-btn" onclick="setLang('en')">EN</button>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-img" style="background: linear-gradient(135deg,#667eea,#764ba2)"></div>
+                        <div class="course-body">
+                            <div class="course-tag">計算機科學</div>
+                            <h3 data-zh="資料結構與演算法" data-en="Data Structures & Algorithms">資料結構與演算法</h3>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width:65%"></div>
+                                </div>
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-img" style="background: linear-gradient(135deg,#f093fb,#f5576c)"></div>
+                        <div class="course-body">
+                            <div class="course-tag">人工智慧</div>
+                            <h3 data-zh="機器學習導論" data-en="Introduction to Machine Learning">機器學習導論</h3>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width:42%"></div>
+                                </div>
+                                <span>42%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-img" style="background: linear-gradient(135deg,#4facfe,#00f2fe)"></div>
+                        <div class="course-body">
+                            <div class="course-tag">統計學</div>
+                            <h3 data-zh="統計學與資料分析" data-en="Statistics & Data Analysis">統計學與資料分析</h3>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width:88%"></div>
+                                </div>
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════
+     PAGE 3: PERSONAL SETTINGS
+     ═══════════════════════════ -->
+    <div id="page-settings" class="page">
+        <div class="app-layout">
+            <div class="sidebar">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">🎓</div><span class="logo-text">NTU COOL</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a class="nav-item" href="#" onclick="goPage('page-dashboard');return false;"><span
+                            class="nav-icon">📚</span><span data-zh="我的課程" data-en="My Courses">我的課程</span></a>
+                    <a class="nav-item active" href="#"><span class="nav-icon">⚙️</span><span data-zh="個人設定"
+                            data-en="Settings">個人設定</span></a>
+                    <a class="nav-item" href="#" onclick="goPage('page-admin');return false;"><span
+                            class="nav-icon">🛡️</span><span data-zh="管理員 (模擬)" data-en="Admin (Demo)">管理員
+                            (模擬)</span></a>
+                </nav>
+                <div class="sidebar-user">
+                    <div class="user-avatar">陳</div>
+                    <div class="user-info">
+                        <div class="user-name">陳小明</div>
+                        <div class="user-role" data-zh="學生" data-en="Student">學生</div>
+                    </div>
+                </div>
+            </div>
+            <main class="main-content">
+                <div class="page-header">
+                    <h1 data-zh="個人設定" data-en="Personal Settings">個人設定</h1>
+                    <div class="lang-toggle-small">
+                        <button class="lang-btn" onclick="setLang('zh')">中</button>
+                        <button class="lang-btn" onclick="setLang('en')">EN</button>
+                    </div>
+                </div>
+                <div class="settings-layout">
+                    <!-- Settings Sub Nav -->
+                    <div class="settings-subnav">
+                        <a class="subnav-item" href="#" data-zh="個人資料" data-en="Profile">個人資料</a>
+                        <a class="subnav-item" href="#" data-zh="通知設定" data-en="Notifications">通知設定</a>
+                        <a class="subnav-item active" href="#" data-zh="隱私與授權"
+                            data-en="Privacy & Authorization">隱私與授權</a>
+                        <a class="subnav-item" href="#" data-zh="安全性設定" data-en="Security">安全性設定</a>
+                    </div>
+
+                    <!-- Privacy Panel -->
+                    <div class="settings-panel">
+                        <h2 data-zh="隱私與授權設定" data-en="Privacy & Authorization Settings">隱私與授權設定</h2>
+
+                        <!-- Basic Terms Status -->
+                        <div class="settings-card">
+                            <div class="settings-card-header">
+                                <h3 data-zh="基礎條款" data-en="Basic Terms">基礎條款</h3>
+                                <a href="#" class="view-link" data-zh="查看條款 →" data-en="View Terms →">查看條款 →</a>
+                            </div>
+                            <div class="status-row">
+                                <span class="status-badge agreed" data-zh="✅ 已同意" data-en="✅ Agreed">✅ 已同意</span>
+                                <span class="status-meta" data-zh="簽約日期：2026-02-10 09:30 · 版本 v2.1"
+                                    data-en="Signed: 2026-02-10 09:30 · Version v2.1">簽約日期：2026-02-10 09:30 · 版本
+                                    v2.1</span>
+                            </div>
+                            <div class="alert-info" data-zh="ℹ️ 基礎條款為使用本平台的必要條件，不可撤銷同意。"
+                                data-en="ℹ️ Basic Terms are required for platform access and cannot be revoked.">ℹ️
+                                基礎條款為使用本平台的必要條件，不可撤銷同意。</div>
+                        </div>
+
+                        <!-- AI Opt-out Status -->
+                        <div class="settings-card ai-card">
+                            <div class="settings-card-header">
+                                <h3 data-zh="AI 資料訓練授權狀態" data-en="AI Data Training Authorization">AI 資料訓練授權狀態</h3>
+                            </div>
+                            <div class="ai-status-row">
+                                <div class="toggle-wrap">
+                                    <div class="toggle-switch" id="ai-toggle" onclick="toggleAIConsent()" title="點擊切換">
+                                        <div class="toggle-knob"></div>
+                                    </div>
+                                    <span class="ai-status-badge" id="ai-status-badge">已選擇 Opt-out</span>
+                                </div>
+                                <div class="ai-modified-time">
+                                    <span class="clock-icon">🕐</span>
+                                    <span id="ai-modified-label" data-zh="上次修改時間："
+                                        data-en="Last modified: ">上次修改時間：</span>
+                                    <span id="ai-modified-time">2026-03-10 14:22</span>
+                                </div>
+                            </div>
+                            <div class="alert-info" data-zh="ℹ️ 您隨時可以調整 AI 授權狀態，不影響基礎條款的使用資格。"
+                                data-en="ℹ️ You can change your AI authorization status at any time without affecting your basic access.">
+                                ℹ️ 您隨時可以調整 AI 授權狀態，不影響基礎條款的使用資格。</div>
+                        </div>
+
+                        <!-- Audit History -->
+                        <div class="settings-card">
+                            <div class="settings-card-header">
+                                <h3 data-zh="🕑 授權歷史紀錄" data-en="🕑 Authorization History">🕑 授權歷史紀錄</h3>
+                                <button class="export-btn" data-zh="匯出記錄" data-en="Export">匯出記錄</button>
+                            </div>
+                            <table class="audit-table" id="audit-table">
+                                <thead>
+                                    <tr>
+                                        <th data-zh="日期時間" data-en="Date & Time">日期時間</th>
+                                        <th data-zh="操作" data-en="Action">操作</th>
+                                        <th data-zh="狀態" data-en="Status">狀態</th>
+                                        <th data-zh="IP 位址" data-en="IP Address">IP 位址</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="audit-tbody">
+                                    <tr class="audit-row latest">
+                                        <td>2026-03-10 14:22</td>
+                                        <td data-zh="修改 AI 授權" data-en="Changed AI Auth">修改 AI 授權</td>
+                                        <td><span class="audit-badge optout" data-zh="Opt-out"
+                                                data-en="Opt-out">Opt-out</span></td>
+                                        <td>192.168.0.2</td>
+                                    </tr>
+                                    <tr class="audit-row">
+                                        <td>2026-02-10 09:30</td>
+                                        <td data-zh="初始簽署" data-en="Initial Sign">初始簽署</td>
+                                        <td><span class="audit-badge agreed" data-zh="同意" data-en="Agreed">同意</span>
+                                        </td>
+                                        <td>140.112.1.5</td>
+                                    </tr>
+                                    <tr class="audit-row">
+                                        <td>2025-09-01 08:15</td>
+                                        <td data-zh="首次登入" data-en="First Login">首次登入</td>
+                                        <td><span class="audit-badge pending" data-zh="未簽署"
+                                                data-en="Unsigned">未簽署</span></td>
+                                        <td>140.112.1.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════
+     PAGE 4: ADMIN EDITOR
+     ═══════════════════════════ -->
+    <div id="page-admin" class="page">
+        <div class="app-layout">
+            <div class="sidebar">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">🎓</div><span class="logo-text">NTU COOL</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a class="nav-item" href="#" onclick="goPage('page-dashboard');return false;"><span
+                            class="nav-icon">📚</span><span>儀表板</span></a>
+                    <a class="nav-item" href="#" onclick="goPage('page-settings');return false;"><span
+                            class="nav-icon">⚙️</span><span>個人設定</span></a>
+                    <a class="nav-item active" href="#"><span class="nav-icon">🛡️</span><span>協議管理</span></a>
+                </nav>
+                <div class="sidebar-user">
+                    <div class="user-avatar admin">管</div>
+                    <div class="user-info">
+                        <div class="user-name">系統管理員</div>
+                        <div class="user-role">Admin</div>
+                    </div>
+                </div>
+            </div>
+            <main class="main-content">
+                <div class="page-header">
+                    <div>
+                        <div class="breadcrumb">首頁 › 系統設定 › 協議管理</div>
+                        <h1>協議管理 <span class="admin-subtitle">/ Agreement Management</span></h1>
+                    </div>
+                </div>
+
+                <div class="admin-tabs">
+                    <button class="admin-tab active" onclick="switchAdminTab('basic',this)" data-zh="基礎條款"
+                        data-en="Basic Terms">基礎條款</button>
+                    <button class="admin-tab" onclick="switchAdminTab('optout',this)" data-zh="AI Opt-out 條文"
+                        data-en="AI Opt-out Clauses">AI Opt-out 條文</button>
+                </div>
+
+                <div class="admin-layout">
+                    <!-- Editor Area -->
+                    <div class="editor-area">
+                        <div class="editor-lang-tabs">
+                            <button class="editor-lang-btn active" onclick="switchEditorLang('zh',this)">繁體中文</button>
+                            <button class="editor-lang-btn" onclick="switchEditorLang('en',this)">English</button>
+                        </div>
+                        <div class="rce-toolbar">
+                            <button class="rce-btn" title="Bold"><b>B</b></button>
+                            <button class="rce-btn" title="Italic"><i>I</i></button>
+                            <button class="rce-btn" title="Underline"><u>U</u></button>
+                            <div class="rce-sep"></div>
+                            <button class="rce-btn" title="H1">H1</button>
+                            <button class="rce-btn" title="H2">H2</button>
+                            <div class="rce-sep"></div>
+                            <button class="rce-btn" title="Bullet List">≡</button>
+                            <button class="rce-btn" title="Numbered List">①</button>
+                            <div class="rce-sep"></div>
+                            <button class="rce-btn" title="Link">🔗</button>
+                        </div>
+                        <div class="rce-body" contenteditable="true" id="rce-content">
+                            <h2>基礎條款</h2>
+                            <h3>用戶權利</h3>
+                            <ul>
+                                <li>使用者本具有的權益性，本請定投責資問，與積於用戶所指的主要用程數於規的設置，事務不使用用，所以及使用的羅規格。</li>
+                                <li>使用者負責會責任於使用規格，並務設務及權性，並讓職職道，總把管理及相關財以影響含的課題環境性他的報告。</li>
+                            </ul>
+                            <h3>隱私政策</h3>
+                            <p>NTU COOL 的基礎條款，確於用戶企銀服務，保訪即戶版程全意使用的隱私私權，事務在管理視組之後的條件，有資路服務，請識援閒入開政策，發布後要求有使用者重新簽署。</p>
+                        </div>
+
+                        <!-- Opt-out Clauses Manager -->
+                        <div class="optout-manager" id="optout-manager">
+                            <div class="optout-manager-header">
+                                <h3>可選 Opt-out 條文管理</h3>
+                                <button class="add-clause-btn" onclick="addClause()">＋ 新增條文</button>
+                            </div>
+                            <div class="clause-list" id="clause-list">
+                                <div class="clause-item" data-id="1">
+                                    <div class="clause-drag">⠿</div>
+                                    <div class="clause-body">
+                                        <div class="clause-title-row">
+                                            <span class="clause-name">行銷活動通知</span>
+                                            <div class="clause-actions">
+                                                <button class="clause-edit-btn" onclick="editClause(this)">✏️</button>
+                                                <button class="clause-del-btn" onclick="deleteClause(this)">🗑️</button>
+                                                <label class="mini-toggle"><input type="checkbox" checked
+                                                        onchange="toggleClause(this)"><span
+                                                        class="mini-knob"></span></label>
+                                            </div>
+                                        </div>
+                                        <span class="clause-preview">用戶資訊活動如個人及個善推廣通知，行銷活動...</span>
+                                    </div>
+                                </div>
+                                <div class="clause-item" data-id="2">
+                                    <div class="clause-drag">⠿</div>
+                                    <div class="clause-body">
+                                        <div class="clause-title-row">
+                                            <span class="clause-name">第三方分析</span>
+                                            <div class="clause-actions">
+                                                <button class="clause-edit-btn" onclick="editClause(this)">✏️</button>
+                                                <button class="clause-del-btn" onclick="deleteClause(this)">🗑️</button>
+                                                <label class="mini-toggle"><input type="checkbox" checked
+                                                        onchange="toggleClause(this)"><span
+                                                        class="mini-knob"></span></label>
+                                            </div>
+                                        </div>
+                                        <span class="clause-preview">第三方分析統關文字，您的排題障臺，第三方...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Version Control Panel -->
+                    <div class="version-panel">
+                        <h3>版本控制</h3>
+                        <div class="version-info">
+                            <div class="version-row"><span>目前版本</span><span class="ver-badge">v2.1</span></div>
+                            <div class="version-row"><span>發布日期</span><span>2026-02-10</span></div>
+                            <div class="version-row"><span>下一版本</span><span class="ver-badge draft">v2.2 草稿</span></div>
+                        </div>
+                        <div class="version-field">
+                            <label>生效日期</label>
+                            <input type="date" class="date-input" value="2026-04-01">
+                        </div>
+                        <label class="checkbox-label small">
+                            <input type="checkbox" id="require-resign">
+                            <span class="checkbox-custom small"></span>
+                            <span class="check-text small">發布後要求所有使用者重新簽署</span>
+                        </label>
+                        <div class="version-actions">
+                            <button class="save-draft-btn">儲存草稿</button>
+                            <button class="publish-btn" onclick="showPublishConfirm()">發布新版本</button>
+                        </div>
+
+                        <!-- User Stats -->
+                        <div class="version-stats">
+                            <div class="stat-item"><span class="stat-num">18,432</span><span
+                                    class="stat-label">已簽署人數</span></div>
+                            <div class="stat-item"><span class="stat-num">1,204</span><span class="stat-label">Opt-out
+                                    人數</span></div>
+                            <div class="stat-item"><span class="stat-num">347</span><span class="stat-label">待簽署</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Publish Confirm Modal -->
+    <div class="modal-overlay" id="publish-modal" onclick="closePublishModal(event)">
+        <div class="modal-box">
+            <h3>⚠️ 確認發布新版本</h3>
+            <p>您即將發布 <strong>v2.2</strong> 協議。此操作將：</p>
+            <ul>
+                <li>使目前 v2.1 標記為舊版</li>
+                <li id="resign-notice">要求 <strong>18,432</strong> 位使用者重新簽署</li>
+            </ul>
+            <div class="modal-actions">
+                <button class="modal-cancel" onclick="closePublishModal()">取消</button>
+                <button class="modal-confirm" onclick="confirmPublish()">確認發布</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edge Case: Session Warning Toast -->
+    <div class="toast" id="session-toast">
+        <span class="toast-icon">⚠️</span>
+        <div class="toast-body">
+            <strong data-zh="工作階段警告" data-en="Session Warning">工作階段警告</strong>
+            <p data-zh="您尚未完成協議簽署。關閉後狀態保持「未授權」，下次登入仍需完成簽署。"
+                data-en="You have not completed signing. Your status remains 'Unauthorized'. You'll need to sign again on next login.">
+                您尚未完成協議簽署。關閉後狀態保持「未授權」，下次登入仍需完成簽署。</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
