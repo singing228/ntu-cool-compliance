@@ -230,3 +230,15 @@ document.addEventListener('DOMContentLoaded', () => {
     footer.appendChild(demoBtn);
   }
 });
+/* ─── Entry Page ─── */
+function updateEntryBtn() {
+  const cb = document.getElementById('entry-checkbox');
+  document.getElementById('entry-submit').disabled = !cb.checked;
+}
+function handleEntrySubmit() {
+  goPage('page-sign');
+}
+function handleEntryCancel() {
+  document.getElementById('entry-checkbox').checked = false;
+  document.getElementById('entry-submit').disabled = true;
+}

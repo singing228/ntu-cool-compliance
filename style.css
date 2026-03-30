@@ -1486,3 +1486,99 @@ body {
     color: var(--text-muted);
     line-height: 1.5;
 }
+/* ─── Entry Page ─── */
+.entry-overlay {
+    min-height: 100vh;
+    background: #4a4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  .entry-dialog {
+    background: var(--surface);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.4);
+    overflow: hidden;
+  }
+  .entry-header {
+    background: #1a4e7a;
+    padding: .85rem 1.25rem;
+  }
+  .entry-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  .entry-logo-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+    font-style: italic;
+  }
+  .entry-body {
+    padding: 1.75rem 1.75rem 1.25rem;
+  }
+  .entry-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .entry-desc {
+    font-size: .9rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+  .entry-link {
+    color: #1a6eb5;
+    text-decoration: none;
+  }
+  .entry-link:hover { text-decoration: underline; }
+  .entry-check-label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+  }
+  .entry-check-label input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    accent-color: #1a6eb5;
+  }
+  .entry-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: .75rem;
+    padding: 1rem 1.75rem 1.5rem;
+    border-top: 1px solid var(--border);
+    margin-top: 1.25rem;
+  }
+  .entry-cancel-btn {
+    padding: .45rem 1.1rem;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 3px;
+    font-size: .9rem;
+    cursor: pointer;
+  }
+  .entry-cancel-btn:hover { background: var(--surface2); }
+  .entry-submit-btn {
+    padding: .45rem 1.4rem;
+    background: #1a6eb5;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .entry-submit-btn:hover:not(:disabled) { background: #1558a0; }
+  .entry-submit-btn:disabled {
+    background: #90b8d8;
+    cursor: not-allowed;
+  }

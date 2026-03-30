@@ -16,7 +16,42 @@
     <!-- ═══════════════════════════════════════════
      PAGE 1: AGREEMENT SIGNING (Compliance Gate)
      ═══════════════════════════════════════════ -->
-    <div id="page-sign" class="page active">
+   <!-- ─── Entry Page ─── -->
+<div id="page-entry" class="page active">
+    <div class="entry-overlay">
+      <div class="entry-dialog">
+        <div class="entry-header">
+          <div class="entry-logo-wrap">
+            <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+              <rect x="0" y="8" width="6" height="20" rx="1.5" fill="#e05c3a"/>
+              <rect x="9" y="4" width="6" height="24" rx="1.5" fill="#e05c3a"/>
+              <rect x="18" y="0" width="6" height="28" rx="1.5" fill="#1a4e7a"/>
+              <rect x="27" y="4" width="6" height="24" rx="1.5" fill="#1a4e7a"/>
+            </svg>
+            <span class="entry-logo-text">cool</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <h2 class="entry-title">NTU COOL 用戶協議</h2>
+          <p class="entry-desc">
+            無論您是新的使用者，或是自上次同意以來，
+            <a href="#" class="entry-link">NTU COOL 用戶協議</a>
+            都已經變更。請在您繼續使用前同意
+            <a href="#" class="entry-link">NTU COOL 用戶協議</a>。
+          </p>
+          <label class="entry-check-label">
+            <input type="checkbox" id="entry-checkbox" onchange="updateEntryBtn()">
+            <span>我同意<a href="#" class="entry-link">NTU COOL 用戶協議</a>。</span>
+          </label>
+        </div>
+        <div class="entry-footer">
+          <button class="entry-cancel-btn" onclick="handleEntryCancel()">取消</button>
+          <button class="entry-submit-btn" id="entry-submit" disabled onclick="handleEntrySubmit()">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+     <div id="page-sign" class="page">
         <nav class="topbar">
             <div class="topbar-logo">
                 <div class="logo-icon">🎓</div>
