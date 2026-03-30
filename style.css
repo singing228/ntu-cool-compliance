@@ -1587,3 +1587,7 @@ body {
     background: #90b8d8;
     cursor: not-allowed;
   }
+  .settings-card {
+    display: flex;
+    flex-direction: column;
+  }
